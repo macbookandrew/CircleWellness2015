@@ -12,4 +12,3 @@ function add_custom_css() {
 add_action( 'wp_print_styles', 'add_custom_css' );
 
 include('functions-branding.php');
-include('functions-church.php');
