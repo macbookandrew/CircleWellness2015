@@ -905,6 +905,25 @@ div.nav-menu > ul {
 .nav-menu li {
 	display: inline-block;
 	position: relative;
+    border-left: 1px solid #EFF5F9;
+
+    &:before,
+    &:last-of-type:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border: 1px solid #AFCADE;
+        z-index: -1;
+    }
+
+    &:before { left: -2px; }
+
+    &:last-of-type {
+        border-right: 1px solid #EFF5F9;
+
+        &:after { right: -1px; }
+    }
 }
 
 .nav-menu li a {
