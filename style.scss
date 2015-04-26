@@ -871,8 +871,10 @@ img.wp-smiley,
         display: inline-block;
 
         img {
-            margin: -0.9em 2em;
-            height: 5em;
+            @media screen and (min-width: 825px) {
+                margin: -0.9em 2em;
+                height: 5em;
+            }
         }
     }
 }
@@ -894,6 +896,7 @@ img.wp-smiley,
 	position: relative;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul.nav-menu,
