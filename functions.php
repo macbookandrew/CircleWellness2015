@@ -11,4 +11,10 @@ function add_custom_css() {
 }
 add_action( 'wp_print_styles', 'add_custom_css' );
 
+function remove_custom_header() {
+    remove_theme_support( 'custom-header' );
+    remove_custom_image_header();
+}
+add_action( 'after_setup_theme', 'remove_custom_header', 12 );
+
 include('functions-branding.php');
