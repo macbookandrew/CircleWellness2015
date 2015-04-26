@@ -865,36 +865,20 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
-}
 
-.site-header .home-link {
-	color: $text-color;
-	display: block;
-	margin: 0 auto;
-	max-width: 1080px;
-	min-height: 230px;
-	padding: 0 20px;
-	text-decoration: none;
-	width: 100%;
+    .home-link {
+        display: inline-block;
+
+        img {
+            margin: -0.9em 2em;
+            height: 5em;
+        }
+    }
 }
 
 .site-header .site-title:hover {
 	text-decoration: underline;
 }
-
-.site-title {
-	font-size: 60px;
-	font-weight: bold;
-	line-height: 1;
-	margin: 0;
-	padding: 58px 0 10px;
-}
-
-.site-description {
-	font: 300 italic 24px $header-font-stack-secondary;
-	margin: 0;
-}
-
 
 /**
  * 4.2 Navigation
@@ -907,6 +891,8 @@ img.wp-smiley,
 	max-width: 1080px;
 	min-height: 45px;
 	position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 ul.nav-menu,
@@ -995,9 +981,7 @@ ul.nav-menu .focus > ul,
 
 /* Navbar */
 .navbar {
-	background-color: $menu-background;
-	margin: 0 auto;
-	max-width: 1600px;
+	background: linear-gradient(to bottom, rgba(209, 227, 239, 0.7), rgba(197, 219, 233, 0.7));
 	width: 100%;
 }
 
