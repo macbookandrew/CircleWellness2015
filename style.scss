@@ -818,7 +818,6 @@ img.wp-smiley,
  */
 
 .site {
-	background-color: $white;
 	border-left: 1px solid #f2f2f2;
 	border-right: 1px solid #f2f2f2;
 	margin: 0 auto;
@@ -828,6 +827,7 @@ img.wp-smiley,
 
 .site-main {
 	position: relative;
+    background-color: white;
 }
 
 .site-main .sidebar-container {
@@ -842,6 +842,15 @@ img.wp-smiley,
 	margin: 0 auto;
 	max-width: 1040px;
 }
+
+.navbar,
+.site-main {
+    margin: 4em auto;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    box-shadow: (0 0 5px rgba(0, 0, 0, 0.4));
+}
+
 
 
 /**
