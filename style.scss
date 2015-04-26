@@ -73,7 +73,7 @@ $footer-text:               #686758;
 $footer-link:               #e6402a; // footer widget links
 $copyright-background:      #e8e5ce;
 
-$text-color:                #141412; // normal body text
+$text-color:                #4B7EB4; // normal body text
 
 $link-color:                #ca3c08; // normal link state
 $link-highlight:            #ea9629; // link :hover state
@@ -972,7 +972,7 @@ ul.nav-menu .focus > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: $secondary-links;
+	font-weight: 700;
 }
 
 .menu-toggle {
