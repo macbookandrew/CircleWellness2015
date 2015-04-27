@@ -8,3 +8,5 @@ style.css.map
 style.min.css
 style.min.css.map
 .sass-cache/*
+/meteor-slides.css
+/meteor-slides.css.map
