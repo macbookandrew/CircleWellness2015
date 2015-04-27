@@ -39,10 +39,6 @@ div.meteor-slides.meteor-right {
 div.meteor-slides.meteor-center {
 	margin: 0 auto;
 }
-div.meteor-slides.navpaged,
-div.meteor-slides.navboth {
-	margin-bottom: 20px;
-}
 .meteor-slides .meteor-clip {
 	line-height: 0;
 	margin: 0;
@@ -50,6 +46,7 @@ div.meteor-slides.navboth {
 	padding: 0;
 	position: relative;
 	width: 100%;
+    border-radius: 4px;
 }
 .meteor-slides .meteor-shim {
 	border: 0;
@@ -155,7 +152,7 @@ ul.meteor-nav li {
 -------------------------------------------------------------- */
 
 .meteor-slides .meteor-buttons {
-    bottom: -15px;
+    bottom: 5px;
 	box-sizing: initial;
     height: 9px;
     left: 0;
@@ -164,6 +161,7 @@ ul.meteor-nav li {
     position: absolute;
     width: 100%;
     z-index: 999;
+    text-align: center;
 }
 header#branding .meteor-buttons {
 	left: 5px; /* A little nudge for Twenty Eleven */
@@ -171,8 +169,7 @@ header#branding .meteor-buttons {
 .meteor-slides .meteor-buttons a {
 	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL1JREFUeNpi3LhhAwMQKABxNBB7A7EREJ8D4q1AvBSIHzBAAF41LFAFBUD8BYiLoQqMoBpA4hOgBrUCcRQDAlhCsRYQV7NAbfni5+9fg6ToOAhv2rixBSrPgGYIMgCJX2OC2rwVh6KtUHlvBvzAmwXJv9gAzJuEgBETAcUwS84RMOgcE5LzsToZKr+VgEFbWaDRVwAN2K1oscYDxHOgirVwBPgykBks0HQyARo7vWhpZA5SOqoGxQ6udAQQYADRXjd4h5WzsQAAAABJRU5ErkJggg==') no-repeat bottom left;
 	border: none;
-	display: block;
-	float: left;
+	display: inline-block;
 	width: 9px;
 	height: 9px;
 	margin: 0 3px 0 0 !important;
