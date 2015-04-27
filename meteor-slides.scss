@@ -92,9 +92,9 @@ div.meteor-slides.navboth {
 	width: auto\9; /* IE8 */
 }
 .meteor-slides .mslide img[src$='.png'] {
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); /* IE7 */
-	zoom: 1;	
+	zoom: 1;
 }
 
 /* =Previous/Next Navigation
@@ -183,7 +183,7 @@ header#branding .meteor-buttons {
 .meteor-buttons a {
     &:hover,
     &.activeSlide {
-        background: url('../images/buttons.png') no-repeat bottom right;
+        background-position: bottom right;
     }
 }
 * html .meteor-buttons a {
@@ -191,6 +191,6 @@ header#branding .meteor-buttons {
 
     &:hover,
     &.activeSlide {
-        background: url('../images/buttons.gif') no-repeat bottom right; /* IE6 */
+        background-position: bottom right; /* IE6 */
     }
 }
