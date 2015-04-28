@@ -855,7 +855,8 @@ img.wp-smiley,
 .navbar,
 .site-main,
 .site-info {
-    margin: 4em auto;
+    @media screen and (min-width: 400px) { margin: 4em auto; }
+    @media screen and (max-width: 399px) { margin: 1em auto; }
 }
 
 
