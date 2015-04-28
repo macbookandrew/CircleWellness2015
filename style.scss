@@ -828,7 +828,7 @@ img.wp-smiley,
 
 .site-main {
 	position: relative;
-    background-color: white;
+    background: $white linear-gradient(to bottom, #f1f2f3 0, #ffffff 100px) no-repeat;
 }
 
 .site-main .sidebar-container {
