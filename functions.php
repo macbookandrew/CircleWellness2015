@@ -17,4 +17,10 @@ function remove_custom_header() {
 }
 add_action( 'after_setup_theme', 'remove_custom_header', 12 );
 
+// Remove masonry.js
+function dequeue_masonry() {
+   wp_dequeue_script( 'jquery-masonry' );
+}
+add_action( 'wp_print_scripts', 'dequeue_masonry' );
+
 include('functions-branding.php');
