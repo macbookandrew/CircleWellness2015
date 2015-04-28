@@ -845,13 +845,18 @@ img.wp-smiley,
 }
 
 .navbar,
-.site-main {
-    margin: 4em auto;
+.site-main,
+.home-quick-link {
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 5px;
     box-shadow: (0 0 5px rgba(0, 0, 0, 0.4));
 }
 
+.navbar,
+.site-main,
+.site-info {
+    margin: 4em auto;
+}
 
 
 /**
@@ -2601,7 +2606,6 @@ footer.entry-meta {
  */
 
 .site-footer {
-	background-color: $copyright-background;
 	color: $footer-text;
 	font-size: 14px;
 	text-align: center;
@@ -2661,8 +2665,8 @@ footer.entry-meta {
 }
 
 .site-info {
-	margin: 0 auto;
-	max-width: 1040px;
+    background-color: $white;
+    margin-bottom: 0;
 	padding: 30px 0;
 	width: 100%;
 }
