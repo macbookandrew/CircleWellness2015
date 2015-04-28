@@ -20,4 +20,14 @@ add_action( 'after_setup_theme', 'remove_custom_header', 12 );
 // add footer widget sizes
 add_image_size( 'home_quick_link', '228', '137' );
 
+// check for existence of backgorund image and add to post_class
+function add_custom_background_class( $classes ) {
+    global $post;
+    if ( get_field( 'background_image', $post->ID ) ) {
+        $classes[] = 'custom-background';
+    }
+    return $classes;
+}
+add_filter( 'post_class', 'add_custom_background_class' );
+
 include('functions-branding.php');
