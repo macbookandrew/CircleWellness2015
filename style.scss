@@ -1083,17 +1083,29 @@ ul.nav-menu .focus > ul,
 
 .custom-background {
     background-repeat: no-repeat;
-    @media screen and (min-width: 1200px) {
-        background-size: 40%;
-        background-position: bottom left;
-    }
-    @media screen and (min-width: 643px) and (max-width: 1199px) {
-        background-size: 48%;
-        background-position: top left;
-    }
+    background-position: top left;
+
+    @media screen and (min-width: 1200px) { background-size: 40%; }
+    @media screen and (min-width: 643px) and (max-width: 1199px) { background-size: 48%; }
     @media screen and (max-width: 642px) {
         & > * { background-color: rgba(255, 255, 255, 0.75); }
         .entry-header { margin-bottom: -5px; }
+    }
+
+    @media screen and (min-width: 642px) {
+        .wpcf7 {
+            &, & ~ * {
+                width: 200%;
+                margin-left: -100%;
+            }
+
+            &-form {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            p { width: 50%; }
+        }
     }
 }
 
