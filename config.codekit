@@ -124,6 +124,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/widget-learn-more.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5069,
+		"inputAbbreviatedPath": "\/images\/widget-learn-more.jpg",
+		"outputAbbreviatedPath": "\/images\/widget-learn-more.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/widget-sign-in.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3877,
+		"inputAbbreviatedPath": "\/images\/widget-sign-in.jpg",
+		"outputAbbreviatedPath": "\/images\/widget-sign-in.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/widget-social-media.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8458,
+		"inputAbbreviatedPath": "\/images\/widget-social-media.jpg",
+		"outputAbbreviatedPath": "\/images\/widget-social-media.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/meteor-slides.css": {
 		"fileType": 16,
 		"ignore": 1,

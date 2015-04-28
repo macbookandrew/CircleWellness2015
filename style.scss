@@ -2642,20 +2642,25 @@ footer.entry-meta {
         a { color: $footer-link; }
 
         background-color: white;
+        background-repeat: none;
+        background-size: cover;
 
         &:nth-child(1) { // account
+            background-image: url('images/widget-sign-in.jpg');
             a { color: #7B4545; }
         }
 
         &:nth-child(2) { // social media
-
+            background-image: url('images/widget-social-media.jpg');
         }
 
         &:nth-child(3) { // secure email
+            background-image: url('images/widget-secure-email.jpg');
             a { color: $link-highlight; }
         }
 
         &:nth-child(4) { // learn more
+            background-image: url('images/widget-learn-more.jpg');
             a { color: #7B4545; }
         }
     }
