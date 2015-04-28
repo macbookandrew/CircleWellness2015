@@ -12,6 +12,9 @@
 
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
+
+            <?php if ( function_exists( 'home_quick_links' ) ) { home_quick_links(); } ?>
+
 			<?php get_sidebar( 'main' ); ?>
 
 			<div class="site-info">
