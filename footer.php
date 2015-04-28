@@ -19,7 +19,7 @@
 
 			<div class="site-info">
 				<?php do_action( 'twentythirteen_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentythirteen' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentythirteen' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentythirteen' ), 'WordPress' ); ?></a> | &copy;2012&ndash;<?php echo date('Y'); ?> | Designed by <a href="http://andrewrminion.com/" title="AndrewRMinion Design">AndrewRMinion Design</a> | Maintained by <?php bloginfo( 'name' ); ?> | <?php wp_loginout(); ?>
+                <span>&copy;<?php echo date('Y'); ?></span> <span><a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Powered by WordPress</a></span> <span>Designed by <a href="http://andrewrminion.com/?utm_source=client-site&utm_campaign=CircleWellness.com&utm_content=site-footer" title="AndrewRMinion Design">AndrewRMinion Design</a></span> <span>Maintained by <?php bloginfo( 'name' ); ?></span> <span><?php wp_loginout(); ?></span>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
