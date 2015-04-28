@@ -90,9 +90,9 @@ $menu-hover-background:     linear-gradient(to top, rgba(209, 227, 239, 0.7), rg
 
 $required:                  #ed331c; // comment form
 
-$header-font-stack-main:      Bitter, Georgia, serif;
-$header-font-stack-secondary: "Source Sans Pro", Helvetica, sans-serif;
-$body-font-stack:             "Open Sans", Helvetica, sans-serif;
+$header-font-stack-main:      "Gotham Book", Gotham, Verdana, sans-serif;
+$header-font-stack-secondary: $header-font-stack-main;
+$body-font-stack:             $header-font-stack-main;
 
 /**
  * 1.0 Reset
@@ -1121,11 +1121,12 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-header {
+    margin-top: 30px;
 	margin-bottom: 30px;
 }
 
 .entry-title {
-	font-weight: normal;
+	font-weight: 700;
 	margin: 0 0 5px;
 }
 
