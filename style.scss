@@ -2604,76 +2604,66 @@ footer.entry-meta {
 	color: $footer-text;
 	font-size: 14px;
 	text-align: center;
-}
 
-.site-footer .widget-area,
-.sidebar .site-footer {
-	text-align: left;
-}
 
-.site-footer a {
-	color: $footer-text;
-}
+    .widget-area,
+    .sidebar & { text-align: left; }
 
-.site-footer .sidebar-container {
-	padding: 20px 0;
-}
+    a { color: $footer-text; }
 
-.site-footer .widget-area {
-	margin: 0 auto;
-	width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+    .sidebar-container { padding: 20px 0; }
 
-.sidebar .site-footer .widget-area {
-	max-width: 724px;
-	position: relative;
-	left: -158px;
-}
-
-.site-footer .widget {
-	float: left;
-    & + .widget { margin-left: 1.5em; }
-}
-
-.sidebar .site-footer .widget {
-	width: 228px;
-}
-
-.sidebar .site-footer .widget:nth-of-type(4),
-.sidebar .site-footer .widget:nth-of-type(3) {
-	margin-right: 0;
-}
-
-.site-footer .widget a {
-	color: $footer-link;
-}
-
-.site-footer .widget-title,
-.site-footer .widget-title a,
-.site-footer .wp-caption-text {
-	color: $text-color;
-}
-
-.site-footer .widget {
-    background-color: white;
-
-    &:nth-child(1) { // account
-        a { color: #7B4545; }
+    .widget-area {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
-    &:nth-child(2) { // social media
-
+    .sidebar & {
+        max-width: 724px;
+        position: relative;
+        left: -158px;
     }
 
-    &:nth-child(3) { // secure email
-        a { color: $link-highlight; }
+    .widget {
+        float: left;
+        & + .widget { margin-left: 1.5em; }
+
+        .sidebar & {
+            width : 228px;
+            &:nth-of-type(4),
+            &:nth-of-type(3) {
+                margin-right: 0;
+            }
+        }
+
+        a { color: $footer-link; }
+
+        background-color: white;
+
+        &:nth-child(1) { // account
+            a { color: #7B4545; }
+        }
+
+        &:nth-child(2) { // social media
+
+        }
+
+        &:nth-child(3) { // secure email
+            a { color: $link-highlight; }
+        }
+
+        &:nth-child(4) { // learn more
+            a { color: #7B4545; }
+        }
     }
 
-    &:nth-child(4) { // learn more
-        a { color: #7B4545; }
+    .widget-title,
+    .widget-title a,
+    .wp-caption-text {
+        color: $text-color;
     }
 }
 
