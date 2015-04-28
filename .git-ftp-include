@@ -4,3 +4,5 @@ style.min.css.map:style.scss
 meteor-slides.css:meteor-slides.scss
 meteor-slides.css.map:meteor-slides.scss
 
+quick-links-styles.css:quick-links-styles.scss
+quick-links-styles.css.map:quick-links-styles.scss
