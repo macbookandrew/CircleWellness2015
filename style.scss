@@ -586,6 +586,8 @@ hr {
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
+    left: -99999px;
+    top: -99999px;
 }
 
 .screen-reader-text:focus {
