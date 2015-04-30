@@ -23,9 +23,9 @@ add_image_size( 'home_quick_link', '228', '137' );
 // check for existence of backgorund image and add to post_class
 function add_custom_background_class( $classes ) {
     global $post;
-    if ( defined( get_field ) ) { // conditional check for ACF installation
+    if ( class_exists( 'acf' ) ) { // conditional check for ACF installation
         if ( get_field( 'background_image', $post->ID ) ) {
-            $classes[] = 'custom-background';
+            array_push( $classes, 'custom-background' );
         }
     }
     return $classes;
