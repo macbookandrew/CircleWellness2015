@@ -825,13 +825,12 @@ img.wp-smiley,
 	border-right: 1px solid #f2f2f2;
 	margin: 0 auto;
 	width: 100%;
-    max-width: 90%;
-    @media screen and (min-width: 1200px) { max-width: 1200px; }
 }
 
 .site-main {
 	position: relative;
     background: $white linear-gradient(to bottom, #f1f2f3 0, #ffffff 100px) no-repeat;
+    max-width: 1200px;
 }
 
 .site-main .sidebar-container {
