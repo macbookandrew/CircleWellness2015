@@ -19,10 +19,13 @@ get_header(); ?>
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-            <?php if ( get_field( 'background_image' ) ) { ?>
+            <?php if ( get_field( 'background_image' ) ) {
+                $background_image_field = get_field( 'background_image' );
+                $custom_background_image = $background_image_field['url'];
+            ?>
                 <style type="text/css">
                     .custom-background {
-                        background-image: url('<?php echo get_field( 'background_image' )['url']; ?>');
+                        background-image: url('<?php echo $custom_background_image; ?>');
                     }
                 </style>
             <?php } ?>
