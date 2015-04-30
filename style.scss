@@ -634,9 +634,9 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"] {
 	background: #e05d22; /* Old browsers */
-	background: linear-gradient(to bottom, #e05d22 0%, #d94412 100%);
+	background: linear-gradient(to bottom, $link-color 0%, $link-highlight 100%);
 	border: none;
-	border-bottom: 3px solid #b93207;
+	border-bottom: 3px solid $link-color;
 	border-radius: 2px;
 	color: $white;
 	display: inline-block;
@@ -652,8 +652,9 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus {
-	background: #ed6a31; /* Old browsers */
-	background: linear-gradient(to bottom, #ed6a31 0%, #e55627 100%);
+	background: $link-color; /* Old browsers */
+	background: linear-gradient(to bottom, $link-highlight 0%, $link-color 100%);
+    border-bottom-color: $link-highlight;
 	outline: none;
 }
 
@@ -661,10 +662,10 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	background: #d94412; /* Old browsers */
-	background: linear-gradient(to bottom, #d94412 0%, #e05d22 100%); /* W3C */
+	background: $link-highlight; /* Old browsers */
+	background: linear-gradient(to bottom, $link-highlight 0%, $link-color 100%); /* W3C */
 	border: none;
-	border-top: 3px solid #b93207;
+	border-top: 3px solid $link-color;
 	padding: 10px 24px 11px;
 }
 
