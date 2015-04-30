@@ -1,6 +1,8 @@
 .home-quick-links-container {
 	width: 100%;
-	padding: 0;
+    max-width: 2880px;
+    margin: 0 auto;
+	padding: 0 1em;
 
     &:after {
         content: "";
@@ -19,6 +21,7 @@
 .home-quick-link {
     .no-flexbox & { float: left; }
 
+    padding: 1em;
     transition: all 0.3s ease;
     &:hover { opacity: 0.6; }
 
@@ -28,21 +31,11 @@
     }
 
     @media (min-width: 900px) {
-        width: 33%;
-        .no-flexbox & { width: 31%; }
-    }
-
-    @media (min-width: 1000px) {
-        + .home-quick-link { margin-left: 1em;}
-    }
-    @media (min-width: 500px) and (max-width: 999px) {
-        + .home-quick-link:nth-of-type(even) { margin-left: 1em; }
+        width: 25%;
     }
 
     @media (min-width: 500px) and (max-width: 999px) {
-        width: 48%;
-        margin-bottom: 1em;
-        .no-flexbox & { width: 46%; }
+        width: 50%;
     }
 
     @media (max-width: 500px) {
