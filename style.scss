@@ -155,7 +155,7 @@ body {
 	color: $text-color;
 	line-height: 1.5;
 	margin: 0;
-    background: #F3F5F8 url('images/background.jpg') top / 50px repeat-x;
+    background: #F3F5F8 linear-gradient(to bottom, #F3F5F8 0%, #FFFFFF 50%, #F3F5F8 100%) repeat-x;
 }
 
 a {
