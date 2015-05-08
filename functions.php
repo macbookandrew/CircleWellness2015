@@ -32,4 +32,9 @@ function add_custom_background_class( $classes ) {
 }
 add_filter( 'post_class', 'add_custom_background_class' );
 
+// add functions.js
+function functions_JS() {
+    wp_enqueue_script( 'circlewellness-functions', get_stylesheet_directory_uri() . '/js/functions.min.js', array( 'jquery' ) );
+}
+
 include('functions-branding.php');
