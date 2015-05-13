@@ -1,4 +1,5 @@
 <?php
+// use minified CSS
 function add_custom_css() {
     wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.min.css' );
     wp_dequeue_style( 'twentythirteen-style' );
@@ -11,6 +12,14 @@ function add_custom_css() {
 }
 add_action( 'wp_print_styles', 'add_custom_css' );
 
+// remove script and style version numbers
+function script_loader_src_example( $src ) {
+    return remove_query_arg( 'ver', $src );
+}
+add_filter( 'script_loader_src', 'script_loader_src_example' );
+add_filter( 'style_loader_src', 'script_loader_src_example' );
+
+// remove custom header support
 function remove_custom_header() {
     remove_theme_support( 'custom-header' );
     remove_custom_image_header();
@@ -20,7 +29,7 @@ add_action( 'after_setup_theme', 'remove_custom_header', 12 );
 // add footer widget sizes
 add_image_size( 'home_quick_link', '228', '137' );
 
-// check for existence of backgorund image and add to post_class
+// check for existence of background image and add to post_class
 function add_custom_background_class( $classes ) {
     global $post;
     if ( class_exists( 'acf' ) ) { // conditional check for ACF installation
@@ -32,4 +41,5 @@ function add_custom_background_class( $classes ) {
 }
 add_filter( 'post_class', 'add_custom_background_class' );
 
+// include ARMD branding
 include('functions-branding.php');
