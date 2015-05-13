@@ -41,5 +41,11 @@ function add_custom_background_class( $classes ) {
 }
 add_filter( 'post_class', 'add_custom_background_class' );
 
+// add jQuery fix for social media link
+function fix_social_media_link() {
+    wp_enqueue_script( 'social-media-button', get_stylesheet_directory_uri() . '/js/social-media-quick-link-min.js' );
+}
+add_filter( 'wp_enqueue_scripts', 'fix_social_media_link' );
+
 // include ARMD branding
 include('functions-branding.php');

@@ -2,7 +2,7 @@
 	width: 100%;
     max-width: 2880px;
     margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 0.5em;
 
     &:after {
         content: "";
@@ -21,7 +21,7 @@
 .home-quick-link {
     .no-flexbox & { float: left; }
 
-    padding: 1em;
+    padding: 0.5em;
     transition: all 0.3s ease;
     &:hover { opacity: 0.6; }
 
@@ -49,5 +49,33 @@
             width: 100%;
         }
         img { margin: 0 auto; }
+    }
+}
+
+.quick-link-social {
+    &-container { position: relative; }
+
+    &.hidden { z-index: -999; }
+
+    &.facebook,
+    &.twitter {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 50%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    &.twitter {
+        top: 50%;
+        bottom: 100%;
+        margin-bottom: 1em;
+    }
+
+    &.facebook {
+        top: 0%;
+        bottom: 50%;
+        margin-top: 1em;
     }
 }
