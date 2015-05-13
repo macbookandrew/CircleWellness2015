@@ -1081,6 +1081,11 @@ ul.nav-menu .focus > ul,
     }
 }
 
+.custom-background .entry-content + .entry-content {
+    max-width: 100%;
+    padding: 30px;
+}
+
 .custom-background {
     background-repeat: no-repeat;
     background-position: top left;
