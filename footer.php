@@ -19,7 +19,7 @@
 
 			<div class="site-info">
 				<?php do_action( 'twentythirteen_credits' ); ?>
-                <span>&copy;<?php echo date('Y'); ?></span> <span><a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Powered by WordPress</a></span> <span>Designed by <a href="http://andrewrminion.com/?utm_source=client-site&utm_campaign=CircleWellness.com&utm_content=site-footer" title="AndrewRMinion Design">AndrewRMinion Design</a></span> <span>Maintained by <?php bloginfo( 'name' ); ?></span> <span><?php wp_loginout(); ?></span>
+                <span>&copy;<?php echo date('Y'); ?> Circle Health Partners Inc.</span>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
