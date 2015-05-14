@@ -2,7 +2,7 @@
 	width: 100%;
     max-width: 2880px;
     margin: 0 auto;
-	padding: 0 0.5em;
+	padding: 0;
 
     &:after {
         content: "";
@@ -21,7 +21,6 @@
 .home-quick-link {
     .no-flexbox & { float: left; }
 
-    padding: 0.5em;
     transition: all 0.3s ease;
     &:hover { opacity: 0.6; }
 
@@ -36,6 +35,10 @@
 
     @media (min-width: 500px) and (max-width: 999px) {
         width: 50%;
+    }
+
+    @media (min-width: 500px) {
+        padding: 2px;
     }
 
     @media (max-width: 500px) {
