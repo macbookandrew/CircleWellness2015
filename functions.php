@@ -41,11 +41,11 @@ function add_custom_background_class( $classes ) {
 }
 add_filter( 'post_class', 'add_custom_background_class' );
 
-// add jQuery fix for social media link
-function fix_social_media_link() {
-    wp_enqueue_script( 'social-media-button', get_stylesheet_directory_uri() . '/js/social-media-quick-link-min.js' );
+// add javascript functions
+function js_functions() {
+    wp_enqueue_script( 'theme-js-functions', get_stylesheet_directory_uri() . '/js/functions.min.js' );
 }
-add_filter( 'wp_enqueue_scripts', 'fix_social_media_link' );
+add_filter( 'wp_enqueue_scripts', 'js_functions' );
 
 // style the visual editor with editor-style.css to match the theme style
 add_editor_style();
