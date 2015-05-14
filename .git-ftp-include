@@ -6,3 +6,6 @@ meteor-slides.css.map:meteor-slides.scss
 
 quick-links-styles.css:quick-links-styles.scss
 quick-links-styles.css.map:quick-links-styles.scss
+
+editor-style.css:editor-style.scss
+editor-style.css.map:editor-style.scss

@@ -47,5 +47,8 @@ function fix_social_media_link() {
 }
 add_filter( 'wp_enqueue_scripts', 'fix_social_media_link' );
 
+// style the visual editor with editor-style.css to match the theme style
+add_editor_style();
+
 // include ARMD branding
 include('functions-branding.php');
