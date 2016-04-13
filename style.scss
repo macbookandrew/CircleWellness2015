@@ -84,7 +84,8 @@ $secondary-links:           #bc360a; // widget <a>, etc.
 $input-focus:               $link-color;
 $placeholder-color:         rgba($link-color, 0.5); // input placeholders, etc.
 
-$menu-background:           #234a81;
+$menu-background:           #0089F8;
+$menu-link-color:           #E6EFC9;
 $menu-hover-text:           #ffffff; // menubar link hover text color
 $menu-hover-background:     linear-gradient(to top, rgba(209, 227, 239, 0.7), rgba(197, 219, 233, 0.7)); // menubar
 
@@ -883,7 +884,7 @@ img.wp-smiley,
 
         img {
             @media screen and (min-width: 644px) {
-                height: 4em;
+                height: 7em;
             }
             @media screen and (min-width: 644px) and (max-width: 854px) {
                 margin: 0 auto 0.5em;
@@ -923,21 +924,24 @@ img.wp-smiley,
 ul.nav-menu,
 div.nav-menu > ul {
     margin: 0;
-    padding: 0;
+    padding: 1.5em 0;
     @media screen and (min-width: 875px) { padding-right: 20px; }
 }
 
 .nav-menu li {
     display: inline-block;
     position: relative;
+    border-radius: .5em;
 }
 
 .nav-menu li a {
+    color: $menu-link-color;
     display: block;
     font-size: 15px;
     font-weight: 700;
     padding: 21px 20px;
     text-decoration: none;
+    border-radius: .5em;
 }
 
 .nav-menu li:hover > a,
@@ -997,9 +1001,16 @@ ul.nav-menu .focus > ul,
     display: none;
 }
 
+.nav-menu .menu-item-65 {
+    background: linear-gradient(lighten($menu-link-color, 5%), darken($menu-link-color, 10%));
+    &:hover { background: none; }
+
+    a { color: $menu-background; }
+}
+
 /* Navbar */
 .navbar {
-    background: #0089F8;
+    background: $menu-background;
     width: 100%;
 }
 
@@ -1959,7 +1970,7 @@ footer.entry-meta {
 }
 
 .navigation a {
-    color: #E6EFC9;
+    color: $secondary-links;
 }
 
 .navigation a:hover {
