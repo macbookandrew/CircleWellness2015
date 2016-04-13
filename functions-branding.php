@@ -11,7 +11,7 @@
 	function login_css() {
 		echo "<style type=\"text/css\" media=\"screen\">
 		#login h1 a {
-			background-image: url('" . get_bloginfo( 'stylesheet_directory' ) . "/images/CircleWellness-logo.svg') !important;
+			background-image: url('" . get_bloginfo( 'stylesheet_directory' ) . "/images/CircleWellness-logo.min.svg') !important;
 			background-size: 450px 157px !important;
 			background-position: left;
 			width: 450px;
