@@ -883,6 +883,10 @@ img.wp-smiley,
         display: inline-block;
 
         img {
+            max-width: 95%;
+            display: block;
+            margin: 0 auto;
+
             @media screen and (min-width: 644px) {
                 height: 7em;
             }
