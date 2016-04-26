@@ -3,13 +3,8 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
-style.min.css
-style.min.css.map
 .sass-cache/*
-/meteor-slides.css
-/meteor-slides.css.map
-quick-links-styles.css
-quick-links-styles.css.map
-/editor-style.css
-/editor-style.css.map
-/js/functions.min.js
+*.css
+*.css.map
+**/*.min.js
+!style.css

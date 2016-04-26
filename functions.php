@@ -1,7 +1,7 @@
 <?php
 // use minified CSS
 function add_custom_css() {
-    wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.min.css' );
+    wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/CircleWellness.css' );
     wp_dequeue_style( 'twentythirteen-style' );
 
     // fonts
