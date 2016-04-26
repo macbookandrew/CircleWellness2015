@@ -910,8 +910,8 @@ img.wp-smiley,
 
 .tagline {
     text-align: center;
-    color: #101010;
-    font-size: 2rem;
+    color: $dark-gray;
+    font-size: 1.5rem;
     font-weight: 300;
     margin: 1em .5em;
 }
@@ -1139,7 +1139,7 @@ ul.nav-menu .focus > ul,
 .entry-title {
     font-weight: 300;
     margin: 0 0 5px;
-    color: gray;
+    color: $neutral-gray;
     text-transform: uppercase;
 }
 
@@ -2702,7 +2702,8 @@ footer.entry-meta {
 }
 
 .site-info {
-    background-color: $white;
+    background-color: $neutral-gray;
+    color: white;
     margin-bottom: 0;
     padding: 2em;
     width: 100%;
