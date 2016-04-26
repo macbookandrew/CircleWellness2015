@@ -1,5 +1,5 @@
-style.min.css:style.scss
-style.min.css.map:style.scss
+CircleWellness.css:CircleWellness.scss
+CircleWellness.css.map:CircleWellness.scss
 
 meteor-slides.css:meteor-slides.scss
 meteor-slides.css.map:meteor-slides.scss
