@@ -858,7 +858,7 @@ img.wp-smiley,
     max-width: 1040px;
 }
 
-.navbar,
+.site-header,
 .site-main,
 .site-info {
     @media screen and (min-width: 400px) { margin: 1em auto 4em; }
@@ -907,6 +907,14 @@ img.wp-smiley,
 
 .site-header .site-title:hover {
     text-decoration: underline;
+}
+
+.tagline {
+    text-align: center;
+    color: #101010;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1em .5em;
 }
 
 /**

@@ -56,9 +56,9 @@
 					<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-					<img src="images/CircleWellness-tagline.min.svg" class="tagline" alt="Wellness Solutions that Save Money and Save Lives" />
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
+            <h1 class="tagline">Wellness Solutions that Save Money and Save&nbsp;Lives</h1>
 		</header><!-- #masthead -->
 
 		<div id="main" class="site-main">
