@@ -44,7 +44,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">	<?php wp_head(); ?>
+    <meta name="theme-color" content="#0089F8">	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -56,6 +56,7 @@
 					<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
 					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+					<img src="images/CircleWellness-tagline.min.svg" class="tagline" alt="Wellness Solutions that Save Money and Save Lives" />
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
