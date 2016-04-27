@@ -1093,17 +1093,30 @@ ul.nav-menu .focus > ul,
         & > * { background-color: rgba(255, 255, 255, 0.75); }
         .entry-header { margin-bottom: -5px; }
     }
+}
 
-    @media screen and (min-width: 642px) {
-        .wpcf7 {
-            &-form {
-                display: flex;
-                flex-wrap: wrap;
-            }
+@media screen and (min-width: 642px) {
+    .wpcf7 {
+        &-form {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-            p { width: 50%; }
+        p {
+            width: 50%;
+            padding-right: 1em;
+        }
+
+        fieldset {
+            width: 100%;
+            margin-bottom: 24px;
         }
     }
+}
+
+.wpcf7 .wpcf7-response-output {
+    width: 100%;
+    margin: 2em 0 1em;
 }
 
 .sidebar .entry-header,
