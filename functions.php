@@ -43,7 +43,7 @@ add_filter( 'post_class', 'add_custom_background_class' );
 
 // add javascript functions
 function js_functions() {
-    wp_enqueue_script( 'theme-js-functions', get_stylesheet_directory_uri() . '/js/functions.min.js' );
+    wp_enqueue_script( 'theme-js-functions', get_stylesheet_directory_uri() . '/js/functions.min.js', array( 'jquery' ) );
 }
 add_filter( 'wp_enqueue_scripts', 'js_functions' );
 
