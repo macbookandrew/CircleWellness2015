@@ -84,7 +84,7 @@ $secondary-links:           #bc360a; // widget <a>, etc.
 $input-focus:               $link-color;
 $placeholder-color:         rgba($link-color, 0.5); // input placeholders, etc.
 
-$menu-background:           #0089F8;
+$menu-background:           #4B7EB4;
 $menu-link-color:           #F9F6C9;
 $menu-hover-text:           #ffffff; // menubar link hover text color
 $menu-hover-background:     linear-gradient(to top, rgba(209, 227, 239, 0.7), rgba(197, 219, 233, 0.7)); // menubar
@@ -908,10 +908,10 @@ img.wp-smiley,
 
 .tagline {
     text-align: center;
-    color: $dark-gray;
-    font-size: 1.5rem;
+    color: $menu-background;
+    font-size: 2rem;
     font-weight: 300;
-    margin: 1em .5em;
+    margin: .5em .5em 1em;
 }
 
 /**
