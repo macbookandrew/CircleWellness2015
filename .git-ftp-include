@@ -10,4 +10,4 @@ quick-links-styles.css.map:quick-links-styles.scss
 editor-style.css:editor-style.scss
 editor-style.css.map:editor-style.scss
 
-js/functions.js:js/functions.min.js
+js/functions.min.js:js/functions.js
