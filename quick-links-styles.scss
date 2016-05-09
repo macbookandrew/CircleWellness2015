@@ -54,31 +54,3 @@
         img { margin: 0 auto; }
     }
 }
-
-.quick-link-social {
-    &-container { position: relative; }
-
-    &.hidden { z-index: -999; }
-
-    &.facebook,
-    &.twitter {
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 50%;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
-    &.twitter {
-        top: 50%;
-        bottom: 100%;
-        margin-bottom: 1em;
-    }
-
-    &.facebook {
-        top: 0%;
-        bottom: 50%;
-        margin-top: 1em;
-    }
-}
