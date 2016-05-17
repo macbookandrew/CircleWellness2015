@@ -26,7 +26,7 @@ function remove_custom_header() {
 add_action( 'after_setup_theme', 'remove_custom_header', 12 );
 
 // add footer widget sizes
-add_image_size( 'home_quick_link', '500', '300' );
+add_image_size( 'home_quick_link', '500', '200' );
 
 // check for existence of background image and add to post_class
 function add_custom_background_class( $classes ) {
