@@ -930,7 +930,7 @@ img.wp-smiley,
     min-height: 45px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -1055,6 +1055,12 @@ ul.nav-menu .focus > ul,
     cursor: text;
     outline: 0;
     width: 230px;
+}
+
+.header-sidebar {
+    &, & .widget a { color: #F9F6C9; }
+    p, .widget { margin-bottom: 0; }
+    img.icon { max-height: 20px; }
 }
 
 

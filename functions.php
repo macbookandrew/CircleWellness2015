@@ -51,3 +51,16 @@ add_editor_style();
 
 // include ARMD branding
 include('functions-branding.php');
+
+// add header widget area
+function add_header_widget_area() {
+    register_sidebar( array(
+        'name'          => 'Header Widget Area',
+        'id'            => 'header-sidebar',
+        'description'   => 'Widget area in the site header',
+        'class'         => 'header-sidebar',
+        'before_widget' => '<section id="%1$s" class="widget %2$s"',
+        'after_widget'  => '</section>',
+    ));
+}
+add_action( 'widgets_init', 'add_header_widget_area' );
