@@ -910,8 +910,10 @@ img.wp-smiley,
     text-align: center;
     color: $menu-background;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 300;
     margin: .5em .5em 1em;
+
+    body:not(.home) & { display: none; }
 }
 
 /**
