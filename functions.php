@@ -22,7 +22,6 @@ add_filter( 'style_loader_src', 'script_loader_src_example' );
 // remove custom header support
 function remove_custom_header() {
     remove_theme_support( 'custom-header' );
-    remove_custom_image_header();
 }
 add_action( 'after_setup_theme', 'remove_custom_header', 12 );
 
