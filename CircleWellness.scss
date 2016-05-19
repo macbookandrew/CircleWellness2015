@@ -1066,10 +1066,19 @@ ul.nav-menu .focus > ul,
     &, & .widget a { color: #F9F6C9; }
     p, .widget { margin-bottom: 0; }
     img.icon { max-height: 20px; }
+    img.social { margin: 0; }
     .widget { background-color: transparent; }
+    .widget_text p + p { margin-left: 5px; }
 
     @media (max-width: 643px) { text-align: center; }
-    @media (min-width: 644px) { margin-left: auto; }
+    @media (min-width: 644px) {
+        margin-left: auto;
+
+        .widget_text {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 
