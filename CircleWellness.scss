@@ -91,9 +91,13 @@ $menu-hover-background:     linear-gradient(to top, rgba(209, 227, 239, 0.7), rg
 
 $required:                  #ed331c; // comment form
 
-$header-font-stack-main:      'Segoe UI', Frutiger, 'Frutiger Linotype', 'Gotham Book', Gotham, 'Dejavu Sans', 'Helvetica Neue', Verdana, sans-serif;
+$header-font-stack-main:      'Formata Light', 'Helvetica Neue', Verdana, sans-serif;
 $header-font-stack-secondary: $header-font-stack-main;
 $body-font-stack:             $header-font-stack-main;
+
+$header-font-weight-main:       300;
+$header-font-weight-secondary:  300;
+$body-font-weight:              500;
 
 /**
  * 1.0 Reset
@@ -150,6 +154,7 @@ input,
 select,
 textarea {
     font-family: $body-font-stack;
+    font-weight: $body-font-weight;
 }
 
 body {
@@ -205,6 +210,7 @@ h5,
 h6 {
     clear: both;
     font-family: $header-font-stack-main;
+    font-weight: $header-font-weight-main;
     line-height: 1.3;
 }
 
@@ -955,7 +961,7 @@ div.nav-menu > ul {
     color: $menu-link-color;
     display: block;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: $header-font-weight-secondary;
     padding: 15px 20px;
     text-decoration: none;
     border-radius: .5em;
@@ -1691,7 +1697,8 @@ footer.entry-meta {
 .format-link .entry-title {
     color: $link-color;
     display: inline;
-    font: 300 italic 20px $header-font-stack-secondary;
+    font: italic 20px $header-font-stack-secondary;
+    font-weight: $header-font-weight-secondary;
     margin-right: 20px;
 }
 
@@ -1893,7 +1900,8 @@ footer.entry-meta {
 .attachment .entry-title {
     display: inline-block;
     float: left;
-    font: 300 italic 30px $header-font-stack-secondary;
+    font: italic 30px $header-font-stack-secondary;
+    font-weight: $header-font-weight-secondary;
     margin: 0;
 }
 
@@ -2147,7 +2155,8 @@ footer.entry-meta {
 
 .author-description .author-title {
     clear: none;
-    font: 300 italic 20px $header-font-stack-secondary;
+    font: italic 30px $header-font-stack-secondary;
+    font-weight: $header-font-weight-secondary;
     margin: 0 0 8px;
 }
 
@@ -2172,7 +2181,8 @@ footer.entry-meta {
 
 .archive-title,
 .archive-meta {
-    font: 300 italic 30px $header-font-stack-secondary;
+    font: italic 30px $header-font-stack-secondary;
+    font-weight: $header-font-weight-secondary;
     margin: 0 auto;
     max-width: 1040px;
     padding: 30px 0;
@@ -2202,7 +2212,8 @@ footer.entry-meta {
 }
 
 .page-title {
-    font: 300 italic 30px $header-font-stack-secondary;
+    font: italic 30px $header-font-stack-secondary;
+    font-weight: $header-font-weight-secondary;
     margin: 0 auto;
     max-width: 1040px;
     padding: 30px 0;
@@ -2295,7 +2306,8 @@ footer.entry-meta {
 }
 
 .comments-title {
-    font: 300 italic 28px $header-font-stack-secondary;
+    font: italic 30px $header-font-stack-secondary;
+    font-weight: $header-font-weight-secondary;
 }
 
 .comment-list,
@@ -2435,7 +2447,8 @@ footer.entry-meta {
 }
 
 .comment-reply-title {
-    font: 300 italic 28px $header-font-stack-secondary;
+    font: italic 30px $header-font-stack-secondary;
+    font-weight: $header-font-weight-secondary;
 }
 
 .comment-reply-title small a {
@@ -2601,7 +2614,8 @@ footer.entry-meta {
     word-wrap: break-word;
 
     .widget-title {
-        font: 300 italic 20px $header-font-stack-secondary;
+        font: italic 30px $header-font-stack-secondary;
+        font-weight: $header-font-weight-secondary;
         margin: 0 0 10px;
     }
 
@@ -3008,7 +3022,8 @@ footer.entry-meta {
     .menu-toggle {
         cursor: pointer;
         display: inline-block;
-        font: bold 16px/1.3 $header-font-stack-secondary;
+        font: 16px/1.3 $header-font-stack-secondary;
+        font-weight: 700;
         color: $menu-background;
         margin: 0;
         padding: 18px 10px 18px 20px;
