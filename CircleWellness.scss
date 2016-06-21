@@ -73,9 +73,9 @@ $footer-text:               #686758;
 $footer-link:               #e6402a; // footer widget links
 $copyright-background:      #e8e5ce;
 
-$text-color:                #4B7EB4; // normal body text
+$text-color:                #00B5E1; // normal body text
 
-$link-color:                #4B7EB4; // normal link state
+$link-color:                #00B5E1; // normal link state
 $link-highlight:            #234a81; // link :hover state
 $link-visited:              #234a81; // link :active, :focus states
 $page-links:                #e63f2a; // paged navigation, etc.
@@ -84,8 +84,8 @@ $secondary-links:           #bc360a; // widget <a>, etc.
 $input-focus:               $link-color;
 $placeholder-color:         rgba($link-color, 0.5); // input placeholders, etc.
 
-$menu-background:           #4B7EB4;
-$menu-link-color:           #F9F6C9;
+$menu-background:           #00B5E1;
+$menu-link-color:           #777776;
 $menu-hover-text:           #ffffff; // menubar link hover text color
 $menu-hover-background:     linear-gradient(to top, rgba(209, 227, 239, 0.7), rgba(197, 219, 233, 0.7)); // menubar
 
@@ -962,6 +962,8 @@ div.nav-menu > ul {
     border-radius: .5em;
 }
 
+.nav-menu li.current-menu-item a { color: $menu-background; }
+
 .nav-menu li:hover > a,
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
@@ -1019,16 +1021,8 @@ ul.nav-menu .focus > ul,
     display: none;
 }
 
-.nav-menu .menu-item-65 {
-    background: linear-gradient(lighten($menu-link-color, 5%), darken($menu-link-color, 10%));
-    &:hover { background: none; }
-
-    a { color: $menu-background; }
-}
-
 /* Navbar */
 .navbar {
-    background: $menu-background;
     width: 100%;
 }
 
@@ -1063,21 +1057,31 @@ ul.nav-menu .focus > ul,
 }
 
 .header-sidebar {
-    &, & .widget a { color: #F9F6C9; }
-    p, .widget { margin-bottom: 0; }
-    img.icon { max-height: 20px; }
-    img.social { margin: 0; }
-    .widget { background-color: transparent; }
-    .widget_text p + p { margin-left: 5px; }
+    background-color: $menu-background;
 
-    @media (max-width: 643px) { text-align: center; }
-    @media (min-width: 644px) {
-        margin-left: auto;
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 
-        .widget_text {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    .widget {
+        font-size: 16px;
+
+        &, & p { margin-bottom: 0; }
+
+        a { color: white; }
+    }
+
+    .dashicons.circle {
+        color: $menu-background;
+        border-radius: 50%;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-right: 0.75em;
     }
 }
 

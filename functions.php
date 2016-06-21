@@ -3,6 +3,7 @@
 function add_custom_css() {
     wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/CircleWellness.css' );
     wp_dequeue_style( 'twentythirteen-style' );
+    wp_enqueue_style( 'dashicons' );
 
     // fonts
     wp_dequeue_style( 'twentythirteen-fonts' );

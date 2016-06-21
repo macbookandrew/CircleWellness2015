@@ -50,15 +50,17 @@
 <body <?php body_class(); ?>>
     <div id="page" class="hfeed site">
         <header id="masthead" class="site-header" role="banner">
+            <section class="header-sidebar">
+                <section class="header-sidebar container">
+                    <?php dynamic_sidebar( 'header-sidebar' ) ?>
+                </section>
+            </section>
             <div id="navbar" class="navbar">
                 <nav id="site-navigation" class="navigation main-navigation" role="navigation">
                     <a class="home-link" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/CircleWellness-logo.min.svg" alt="CircleWellness logo" title="CircleWellness" /></a>
                     <h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
                     <a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-                    <section class="header-sidebar">
-                        <?php dynamic_sidebar( 'header-sidebar' ) ?>
-                    </section>
                 </nav><!-- #site-navigation -->
             </div><!-- #navbar -->
             <h1 class="tagline">Wellness Solutions that Save Money and Save&nbsp;Lives</h1>
