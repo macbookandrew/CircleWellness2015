@@ -60,7 +60,7 @@ function add_header_widget_area() {
         'id'            => 'header-sidebar',
         'description'   => 'Widget area in the site header',
         'class'         => 'header-sidebar',
-        'before_widget' => '<section id="%1$s" class="widget %2$s"',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
     ));
 }
