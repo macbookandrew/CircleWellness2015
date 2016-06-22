@@ -87,7 +87,6 @@ $placeholder-color:         rgba($link-color, 0.5); // input placeholders, etc.
 $menu-background:           #00B5E1;
 $menu-link-color:           #777776;
 $menu-hover-text:           #ffffff; // menubar link hover text color
-$menu-hover-background:     linear-gradient(to top, rgba(209, 227, 239, 0.7), rgba(197, 219, 233, 0.7)); // menubar
 
 $required:                  #ed331c; // comment form
 
@@ -964,7 +963,6 @@ div.nav-menu > ul {
     font-weight: $header-font-weight-secondary;
     padding: 15px 20px;
     text-decoration: none;
-    border-radius: .5em;
 }
 
 .nav-menu li.current-menu-item a { color: $menu-background; }
@@ -973,7 +971,7 @@ div.nav-menu > ul {
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-    background: $menu-hover-background;
+    color: $menu-background;
 }
 
 .nav-menu .sub-menu,
@@ -1009,7 +1007,7 @@ ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover,
 ul.nav-menu ul a:focus,
 .nav-menu ul ul a:focus {
-    background: $menu-hover-background;
+    color: $menu-background;
 }
 
 ul.nav-menu li:hover > ul,
@@ -1566,7 +1564,7 @@ footer.entry-meta {
 
 /* Audio */
 .format-audio {
-    background: $menu-hover-background;
+    background: $menu-background;
 }
 
 .format-audio .entry-title {
@@ -1860,7 +1858,7 @@ footer.entry-meta {
 
 /* Video */
 .format-video {
-    background: $menu-hover-background;
+    background: $menu-background;
 }
 
 .format-video .entry-content a,
