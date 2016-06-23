@@ -77,7 +77,7 @@ $text-color:                #0089F8; // normal body text
 
 $link-color:                $text-color; // normal link state
 $link-highlight:            #234a81; // link :hover state
-$link-visited:              #234a81; // link :active, :focus states
+$link-visited:              $link-highlight; // link :active, :focus states
 $page-links:                #e63f2a; // paged navigation, etc.
 $secondary-links:           #bc360a; // widget <a>, etc.
 
@@ -1092,6 +1092,12 @@ ul.nav-menu .focus > ul,
         height: 30px;
         padding: 5px;
         margin-right: 0.75em;
+    }
+
+    a:hover {
+        text-decoration: none;
+
+        .dashicons.circle { background-color: $link-highlight; }
     }
 }
 
